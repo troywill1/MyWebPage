@@ -15,6 +15,8 @@
   <div class="stage">
 	  
     <!-- Header 1 -->
+    <h1>Stage 1: Make your Web Page</h1>
+
     <h1>Webpages, Documents & Structure</h1>
 
     <div class="lesson">
@@ -426,9 +428,111 @@
               &lt;/body&gt;
             </code>
           </pre>
+        </div> <!-- Concept Description div -->
+      </div> <!-- Concept div -->
+    </div> <!-- Lesson div -->
+  </div> <!-- Stage div -->
+
+  <div class="stage">
+    
+    <h1>Stage 2: Automate Your Page</h1>
+    
+    <h1>Telling Computers What To Do</h1>
+
+    <div class="lesson">
+    
+      <h2>Lesson 1: Introduction to "Serious" Programming</h2>
+
+      <div class="concept">
+
+        <div class="concept-title">
+          Computers and Languages
         </div>
-      </div>
-    </div>
+
+        <div class="concept-description">
+    
+          <ul>
+            <li>
+              <span class="italic">Computer</span> - A universal machine that is useless unless it is given some sort of program, or set of instructions, to execute. Given a program, a computer can become many different things.
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              Why do we need to invent languages like Python to program computers instead of using natural languages like English?
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <span class="italic">Ambiguity</span> - natural languages are ambiguous, but we need the computer to execute the code the exact way that the programming intended.
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <span class="italic">Verbosity</span> - natural languages are verbose; we need to describe exactly what the computer needs to do in a very precise sequence of steps.
+            </li>
+          </ul>
+
+        </div> <!-- Concept Description div -->
+      </div> <!-- Concept div -->
+
+      <div class="concept">
+
+        <div class="concept-title">
+          Backus-Naur Form
+        </div>
+
+        <div class="concept-description">
+    
+          <ul>
+            <li>
+              A way to describe a computer language: <span class="italic">&lt;Non-terminal&gt; -&gt; replacement</span>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              John Backus was the lead designer of FORTRAN at IBM (1950s)
+            </li>
+          </ul>
+
+          <pre>
+            <code>
+              Sentence  -&gt; Subject Verb Object
+              Subject   -&gt; Noun
+              Object    -&gt; Noun
+              Verb      -&gt; Eat
+              Verb      -&gt; Like
+              Noun      -&gt; I
+              Noun      -&gt; Python
+              Noun      -&gt; Cookies
+            </code>
+          </pre>
+
+          <p>"Python Eat Cookies" and "Python Eat Python" both follow the "Subject Verb Object" grammar.</p>
+          <p>"I Like Eat" does not.</p>
+
+          <pre>
+            <code>
+              Expression  -&gt; Expression Operator Expression
+              Expression  -&gt; Number
+              Operator    -&gt; +
+              Operator    -&gt; *
+              Number      -&gt; 0,1,...
+              Expression  -&gt; (Expression)
+            </code>
+          </pre>
+
+          <p>3, (1*(2*(3 * 4))), (((7))) follow the Expression Operator Expression grammar.</p>
+          <p>((3), +33 would not follow the grammar.</p>
+
+        </div> <!--Concept Description div -->
+      </div> <!-- Concept div -->
+    </div> <!-- Lesson div -->
+
+  </div> <!-- Stage div -->
 
     <!-- This document validates as CSS level 3 -->
     <p>
@@ -439,6 +543,5 @@
       </a>
     </p>
 
-  </div>
 </body>
 </html>
