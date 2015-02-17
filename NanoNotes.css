@@ -1,7 +1,7 @@
 /* This text color is specified in what's called "hex". You will learn more about this later. */
 h1 {
     text-align: center;
-    color: #294860;
+    color: #323535;
 }
 
 /* change to a nicer font */
@@ -17,7 +17,7 @@ by changing it to
 
     /* padding: 10px; */
 .lesson {
-    background-color: #294860;
+    background-color: #323535;
     border-radius: 20px;
     color: white;
     padding: 10px;
@@ -29,7 +29,7 @@ h2 {
 }
 
 .concept {
-    background-color: #DFEAF1;
+    background-color: #EBEBEB;
     padding: 4px;
     margin: 10px;
     border-radius: 4px;
@@ -40,12 +40,19 @@ h2 {
     font-size: 20px;
     margin: 8px;
     text-align: center;
-    color: #294860;
+    color: #323535;
 }
 
 .concept-description {
     font-weight: lighter;
     margin: 6px;
+}
+
+.concept-subtitle {
+    font-size: 18px;
+    margin: 8px;
+    text-align: center;
+    color: #323535;
 }
 
 .italic {
@@ -54,4 +61,16 @@ h2 {
 
 .bold {
     font-weight: bold;
+}
+
+/* Code Blocks */
+pre {
+ white-space: pre-wrap;
+ background: #323535;
+ color: #BEBEBE;
+}
+#content #pre-stylish code {
+ display: block;
+ padding: 0.5em 1em;
+ border: 1px solid #bebab0;
 }
