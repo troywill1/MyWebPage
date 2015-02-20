@@ -17,7 +17,8 @@ by changing it to
 
     /* padding: 10px; */
 .lesson {
-    background-color: #323535;
+    /* background-color: #323535; */
+    background-color: #1B5DB6;
     border-radius: 20px;
     color: white;
     padding: 10px;
@@ -29,7 +30,8 @@ h2 {
 }
 
 .concept {
-    background-color: #EBEBEB;
+    /* background-color: #EBEBEB; */
+    background-color: #FFFFFF;
     padding: 4px;
     margin: 10px;
     border-radius: 4px;
@@ -66,8 +68,10 @@ h2 {
 /* Code Blocks */
 pre {
  white-space: pre-wrap;
- background: #323535;
- color: #BEBEBE;
+ /* background: #323535; */
+ background: #CEFAFF;
+ /* color: #BEBEBE; */
+ color: black;
 }
 #content #pre-stylish code {
  display: block;
