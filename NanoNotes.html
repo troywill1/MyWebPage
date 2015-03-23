@@ -808,9 +808,9 @@
               <code>
                 # Decisions and Repitition: Equality Comparisons
 
-                print 2 < 3
-                print 21 < 3
-                print 7 * 3 < 21
+                print 2 &lt; 3
+                print 21 &lt; 3
+                print 7 * 3 &lt; 21
 
                 print 7 * 3 != 21
                 print 7 * 3 == 21 # '=' means assignment, '==' mean equality
@@ -823,16 +823,16 @@
 
             <pre>
               <code>
-                if <Test Expression>:
-                  <Block> # block will execute 0 or 1 times
-                <Code>    # will execute regardless of the test expression
+                if &lt;Test Expression&gt;:
+                  &lt;Block&gt; # block will execute 0 or 1 times
+                &lt;Code&gt;    # will execute regardless of the test expression
               </code>
             </pre>
 
             <pre>
               <code>
                 def absolute(x):
-                  if x < 0:
+                  if x &lt; 0:
                     x = -x
                   return x
 
@@ -843,16 +843,95 @@
 
             <pre>
               <code>
-                if <Test Expression>:
-                  <Block>
+                if &lt;Test Expression&gt;:
+                  &lt;Block&gt;
                 else:
-                  <Block>
+                  &lt;Block&gt;
               </code>
             </pre>
 
             <div class="concept-title">
               Or Operator
             </div>
+
+            <pre>
+              <code>
+                &lt;Expression&gt; or &lt;Expression&gt;
+
+                If the first expression evaluates to True, the value is True
+                and the second expression is not evaluated.
+
+                If the first expression evaluates to False, the value is the
+                value of the second expression.
+              </code>
+            </pre>
+
+            <div class="concept-title">
+              Every Possible Computer Program
+            </div>
+
+            <p>We now know enough to write, in theory, every possible computer program. All that is needed:</p>
+
+            <ul>
+              <li>
+                Arithmetic
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                Comparisons
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                Procedures
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                If Statements
+              </li>
+            </ul>
+
+            <p>This was proven in the 1930s by Alan Turing (1912-1954):</p>
+
+            <ul>
+              <li>
+                Developed abstract model of a computer (1936), "Turing Machine"
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                Proved that a machine with a few simple operations could simulate any other machine
+              </li>
+            </ul>
+
+            <div class="concept-title">
+              While Loops
+            </div>
+
+            <pre>
+              <code>
+                while &lt;Test Expression&gt;
+                &lt;Block&gt; # Will execute 0, 1, 2,...times
+              </code>
+            </pre>
+
+            <pre>
+              <code>
+                while &lt;Test Expression&gt;
+                  &lt;Code&gt;
+                  if &lt;Break Test&gt;
+                    break
+                  &lt;More Code&gt;
+
+                &lt;After While&gt;
+              </code>
+            </pre>
 
 
           </div> <!-- Concept Description div -->
