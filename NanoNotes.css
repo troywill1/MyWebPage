@@ -9,9 +9,9 @@ body {
     font-family: Helvetica;
 }
 
-/* the border-radius attribute makes the corners rounded and the margin clears out space for the stuff inside the lesson divs. Try seeing what  happens when you comment out the rule that says
+/* The border-radius attribute makes the corners rounded and the margin clears out space for the stuff inside the lesson divs. Try seeing what  happens when you comment out the rule that says
 
-    padding: 10px; 
+    padding: 10px;
 
 by changing it to
 
@@ -24,7 +24,7 @@ by changing it to
     padding: 10px;
 }
 
-/* margins push other elements away */ 
+/* margins push other elements away */
 h2 {
     margin: 10px;
 }
@@ -66,16 +66,23 @@ h2 {
     font-weight: bold;
 }
 
-/* Code Blocks */
-pre {
- white-space: pre-wrap;
- /* background: #323535; */
- background: #CEFAFF;
- /* color: #BEBEBE; */
- color: black;
+/* Pre and Code Block Styling */
+code, samp, kbd {
+  font-family: "Courier New", Courier, monospace, sans-serif;
+  text-align: left;
+  color: #555;
 }
-#content #pre-stylish code {
- display: block;
- padding: 0.5em 1em;
- border: 1px solid #bebab0;
+
+pre code {
+  line-height: 1.6em;
+  font-size: 12px;
+}
+
+pre {
+  padding: 0.1em 0.5em 0.3em 0.7em;
+  border-left: 11px solid #1B5DB6;
+  margin: 1.7em 0 1.7em 0.3em;
+  overflow: auto;
+  width: 93%;
+  background-color: #D8D8D8
 }
