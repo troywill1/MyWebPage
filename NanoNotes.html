@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+  <meta charset="utf-8"/>
+
+    <title>Introduction to Programming Nanodegree</title>
+
+    <link rel="stylesheet" type="text/css" href="NanoNotes.css">
+
+  </head>
+
+  <body>
+
+    <!-- To add logical structure, use div. -->
+    <div class="stage">
+
+      <!-- Header 1 -->
+      <h1>Stage 1: Make your Web Page</h1>
+
+      <h1>Webpages, Documents & Structure</h1>
+
+      <div class="lesson">
+
+        <!-- Header 2 -->
+        <h2>Lesson 1: The Basics of the Web & HTML</h2>
+
+        <div class="concept">
+
+          <div class="concept-title">
+            How the Web Works
+          </div>
+
+          <div class="concept-description">
+
+            <!-- Paragraph -->
+            <p>HTML (HyperText Markup Language) is the backbone of the web.</p>
+
+            <p>A web page is a text document written in a language called HTML. Web browsers read these documents, and then interpret and display them.</p>
+
+            <!-- Unordered List -->
+            <ul>
+
+              <!-- List Item -->
+              <li>
+                <p><span class="bold">Tag</span>: An HTML tag is always contained within angled brackets. Most tags have an opening tag and a closing tag. Some tags (called "void" tags) do not require a closing tag.</p>
+              </li>
+
+              <li>
+                <p><span class="bold">Element</span>: An HTML element refers to everything within a set of opening and closing tags.</p>
+              </li>
+
+              <li>
+                <p><span class="bold">Attribute</span>: This is a property of an HTML element.</p>
+              </li>
+            </ul>
+
+            <div class="concept-subtitle">
+              HTML Tags
+            </div>
+
+            <ul>
+              <li>
+                <p>Basic Structure</p>
+              </li>
+
+            <!-- Preformatted - marks the text as preformatted. Meaning all the spaces and carriage returns are rendered exactly as typed. -->
+            <!-- Code - defines a block of code -->
+            <!-- &lt; - entity reference for "less than" sign < -->
+            <!-- &gt; - entity reference for "greater than" sign > -->
+
+              <pre>
+                <code>
+                  &lt;TAG&gt;contents&lt;/TAG&gt;
+                </code>
+              </pre>
+
+              <li>
+                <span class="bold">Bold</span>
+              </li>
+
+              <pre>
+                <code>
+                  &lt;b&gt;contents&lt;/b&gt;
+                </code>
+              </pre>
+
+              <li>
+                <span class="italic"><span class="bold">Emphasis (Italiac)</span></span>
+              </li>
+
+              <pre>
+                <code>
+                  &lt;em&gt;contents&lt;/em&gt;
+                </code>
+              </pre>
+            </ul>
+
+            <div class="concept-subtitle">
+              HTML Attributes
+            </div>
+
+            <ul>
+              <li>
+                <p>Basic Structure</p>
+              </li>
+
+              <pre>
+                <code>
+                  &lt;TAG ATTR="value">contents&lt;/TAG&gt;
+                </code>
+              </pre>
+
+              <li>
+                <span class="bold">Anchor</span> (links)
+              </li>
+
+              <pre>
+                <code>
+                  &lt;a href="www.reddit.com"&gt;derp&lt;/a&gt;
+                </code>
+              </pre>
+
+              <li>
+                <span class="bold">Image</span> (void tag; has no content, so it doesn't need a closing tag)
+              </li>
+
+              <pre>
+                <code>
+                  &lt;img src="url" alt="text"&gt;
+                </code>
+              </pre>
+
+              <li>
+                <span class="bold">Break</span> (void tag; inline - just creates a line break)
+              </li>
+
+              <pre>
+                <code>
+                  &lt;br&gt;
+                </code>
+              </pre>
+
+              <li>
+                <span class="bold">Paragraph</span> (block - creates an invisible block around the text that has height and weight)
+              </li>
+
+              <pre>
+                <code>
+                  &lt;p&gt;contents&lt;/p&gt;
+                </code>
+              </pre>
+
+              <li>
+                <span class="bold">Span</span> (inline - container for text that can contain a CSS class)
+              </li>
+
+              <pre>
+                <code>
+                  &lt;span class="foo"&gt;contents&gt;/span&gt;
+                </code>
+              </pre>
+
+              <li>
+                <span class="bold">Div</span> (block - container for text that can contain a CSS class)
+              </li>
+
+              <pre>
+                <code>
+                  &lt;div class="bar"&gt;contents&lt;/div&gt;
+                </code>
+              </pre>
+            </ul>
+
+          </div> <!-- Concept Description div -->
+        </div> <!-- Concept div -->
+      </div> <!-- Lesson div -->
+
+      <div class="lesson">
+
+        <h2>Lesson 2: Creating a Structured Document with HTML</h2>
+
+        <div class="concept">
+
+          <div class="concept-title">
+            Developer Tools
+          </div>
+
+          <div class="concept-description">
+
+            <ul>
+              <li>
+                HTML and CSS are both "languages"
+              </li>
+
+              <li>
+                HTML controls the "structure" of a web page
+              </li>
+
+              <li>
+                CSS controls the "style" of a page (how it looks)
+              </li>
+
+              <li>
+                When programmers talk about the "DOM" (Document Object Model), they are talking about the tree-like structure of a page.
+              </li>
+
+              <li>
+                To learn more about what a "tree-like structure" means, read the first two paragraphs of the wikipedia article on <a href="http://en.wikipedia.org/wiki/Tree_structure">Tree Structures</a>.
+              </li>
+
+              <li>
+                Everything on a webpage is a box. Use &lt;div&gt; to define a block of content, or create "boxes", to give structure to a document with HTML.
+              </li>
+
+              <li>
+                Use "Developer's Tools" in Google Chrome to view the structure of a webpage.
+              </li>
+            </ul>
+
+          </div> <!-- Concept Description div -->
+        </div> <!-- Concept div -->
+      </div> <!-- Lesson div -->
+
+      <div class="lesson">
+        <h2>Lesson 3: Adding CSS Style to HTML Structure</h2>
+
+        <div class="concept">
+
+          <div class="concept-title">
+            What is CSS?
+          </div>
+
+          <div class="concept-description">
+
+            <ul>
+              <li>
+                CSS (Cascading Style Sheets) is code that controls the "style" of HTML elements. CSS allows for the description of the look and formatting of web pages. This can be very powerful, as it fosters the reuse of code and avoids repetition.
+              </li>
+            </ul>
+
+            <div class="concept-subtitle">
+              How does CSS control HTML?
+            </div>
+
+            <ul>
+              <li>
+                Let's say you want all "h1" elements to have a black background and white text:
+              </li>
+
+              <pre>
+                <code>
+                  h1 {
+                    background-color: black;
+                    color: white;
+                  }
+                </code>
+              </pre>
+
+              <li>
+                "h1" is a <span class="bold">selector</span>
+              </li>
+
+              <li>
+                Everything between the curly braces is a <span class="bold">rule</span>
+              </li>
+
+              <li>
+                "background-color" is an <span class="bold">attribute</span>
+              </li>
+
+              <li>
+                "black" is a <span class="bold">value</span>
+              </li>
+
+              <li>
+                If you only want to add style to certain "h1" elements, you can use <span class="bold">class selectors</span>:
+              </li>
+
+              <pre>
+                <code>
+                  &lt;div class="stop"&gt;&lt;/div&gt;
+                  &lt;div class="slow">&lt;/div&gt;
+                  &lt;div class="go">&lt;/div&gt;
+
+                  &lt;style&gt;
+                    div {
+                      height : 50px;
+                      width : 50px;
+                      border-radius: 25px;
+                    }
+                    .stop {
+                      background-color: red;
+                    }
+                    .slow {
+                      background-color: yellow;
+                    }
+                    .go {
+                      background-color: green;
+                    }
+                    &lt;/style&gt;
+                  </code>
+                </pre>
+
+              <li>
+                In the "style" HTML element, you refer to the class with ".class-name"
+              </li>
+
+              <li>
+                Notice how styles can be added to all "div"s or just certain "div"s using the appropriate selector
+              </li>
+            </ul>
+
+            <div class="concept-subtitle">
+              How do I include CSS styling in my web page?
+            </div>
+
+            <ul>
+              <li>
+                Method 1: Write CSS in the &lt;head&gt; element of the HTML document. This method is good for very small projects:
+              </li>
+
+              <pre>
+                <code>
+                  &lt;head&gt;
+                    &lt;style&gt;
+                      div {
+                        background-color : red;
+                      }
+                    &lt;/style&gt;
+                  &lt;/head&gt;
+                  &lt;body&gt;
+                    &lt;div&gt;
+                      This will have a red background.
+                    &lt;/div&gt;
+                  &lt;/body&gt;
+                </code>
+              </pre>
+
+              <li>
+                Method 2: Link your HTML to a separate CSS file. This lets you stay more organized when working on larger projects. For example, you could have a file named "main.html":
+              </li>
+
+              <pre>
+                <code>
+                  &lt;head&gt;
+                    &lt;link rel="stylesheet" type="text/css" href="main.css"&gt;
+                  &lt;/head&gt;
+                  &lt;body&gt;
+                    &lt;div&gt;
+                      This will have a red background.
+                    &lt;/div&gt;
+                  &lt;/body&gt;
+                </code>
+              </pre>
+
+              <p>and in the same folder you could have a file named "main.css":</p>
+
+              <pre>
+                <code>
+                  div {
+                    background-color : red;
+                  }
+                </code>
+              </pre>
+
+              <li>
+                Method 3: Write style "inline" with HTML. This is a bad idea because it leads to lots of repeated code and is hard to read. With this method, you modify the style attributes of <span class="bold">every</span> HTML element:
+              </li>
+
+              <pre>
+                <code>
+                  &lt;body&gt;
+                    &lt;div style="background-color: red; color: white"&gt;
+                      This div will have a red background and white text.
+                    &lt;/div&gt;
+                    &lt;div style="background-color: red; color: white"&gt;
+                      So will this one.
+                    &lt;/div&gt;
+                    &lt;div style="background-color: red; color: white"&gt;
+                      Now, what if I change my mind?
+                    &lt;/div&gt;
+                    &lt;div style="background-color: red; color: white"&gt;
+                      I'd rather have a black background...
+                    &lt;/div&gt;
+                    &lt;div style="background-color: red; color: white"&gt;
+                      Never do this!
+                    &lt;/div&gt;
+                  &lt;/body&gt;
+                </code>
+              </pre>
+            </ul>
+
+          </div> <!-- Concept Description div -->
+        </div> <!-- Concept div -->
+      </div> <!-- Lesson div -->
+
+    </div> <!-- Stage div -->
+
+    <div class="stage">
+
+      <h1>Stage 2: Automate Your Page</h1>
+
+      <h1>Telling Computers What To Do</h1>
+
+      <div class="lesson">
+
+        <h2>Lesson 1: Introduction to "Serious" Programming</h2>
+
+        <div class="concept">
+
+          <div class="concept-title">
+            Computers and Languages
+          </div>
+
+          <div class="concept-description">
+
+            <ul>
+              <li>
+                <span class="bold">Computer</span> - A universal machine that is useless unless it is given some sort of program, or set of instructions, to execute. Given a program, a computer can become many different things.
+              </li>
+
+              <li>
+                Why do we need to invent languages like Python to program computers instead of using natural languages like English?
+              </li>
+
+              <li>
+                <span class="bold">Ambiguity</span> - natural languages are ambiguous, but we need the computer to execute the code the exact way that the programming intended.
+              </li>
+
+              <li>
+                <span class="bold">Verbosity</span> - natural languages are verbose; we need to describe exactly what the computer needs to do in a very precise sequence of steps.
+              </li>
+            </ul>
+
+          </div> <!-- Concept Description div -->
+        </div> <!-- Concept div -->
+
+        <div class="concept">
+
+          <div class="concept-title">
+            Backus-Naur Form
+          </div>
+
+          <div class="concept-description">
+
+            <ul>
+              <li>
+                A way to describe a computer language: <span class="bold">&lt;Non-terminal&gt; -&gt; replacement</span>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                John Backus was the lead designer of FORTRAN at IBM (1950s)
+              </li>
+            </ul>
+
+            <pre>
+              <code>
+                Sentence  -&gt; Subject Verb Object
+                Subject   -&gt; Noun
+                Object    -&gt; Noun
+                Verb      -&gt; Eat
+                Verb      -&gt; Like
+                Noun      -&gt; I
+                Noun      -&gt; Python
+                Noun      -&gt; Cookies
+              </code>
+            </pre>
+
+            <p>"Python Eat Cookies" and "Python Eat Python" both follow the "Subject Verb Object" grammar.</p>
+            <p>"I Like Eat" does not.</p>
+
+            <pre>
+              <code>
+                Expression  -&gt; Expression Operator Expression
+                Expression  -&gt; Number
+                Operator    -&gt; +
+                Operator    -&gt; *
+                Number      -&gt; 0,1,...
+                Expression  -&gt; (Expression)
+              </code>
+            </pre>
+
+            <p>3, (1*(2*(3 * 4))), (((7))) follow the Expression Operator Expression grammar.</p>
+            <p>((3), +33 would not follow the grammar.</p>
+
+          </div> <!-- Concept Description div -->
+        </div> <!-- Concept div -->
+      </div> <!-- Lesson div -->
+
+      <div class="lesson">
+
+        <h2>Lesson 2: Variables and Strings</h2>
+
+        <div class="concept">
+
+          <div class="concept-title">
+            Variables
+          </div>
+
+          <div class="concept-description">
+
+            <pre>
+              <code>
+                speed_of_light = 299792458
+                billionth = 1.0 / 1000000000
+                nanostick = speed_of_light * billionth * 100
+                print nanostick
+              </code>
+            </pre>
+
+            <pre>
+              <code>
+                days = 7 * 7    # the right side is evaluated first
+                days = days - 1
+
+                # "=" means assignment *not* equals; think of it like an arrow.
+                # days &lt;- days - 1
+              </code>
+            </pre>
+
+          </div> <!-- Concept Description div -->
+        </div> <!-- Concept div -->
+
+        <div class="concept">
+
+        <div class="concept-title">
+          Strings
+        </div>
+
+          <div class="concept-description">
+
+            <pre>
+              <code>
+                name = "Troy Williams"
+                print name
+                print "Hello " + name
+
+                # '+' means concatenation when used with strings
+
+                # print "Hello" + 9 - This would return a syntax error
+
+                print "!" * 12 # This repeats the string 12 times
+              </code>
+            </pre>
+
+            <div class="concept-subtitle">
+              Indexing Strings
+            </div>
+
+            <pre>
+              <code>
+                &lt;string&gt; [&lt;expression&gt;]
+
+                'udacity'[0] -&gt; 'u'
+                'udacity'[1 + 1] -&gt; 'a'
+              </code>
+            </pre>
+
+            <div class="concept-subtitle">
+              Selecting Sub-Sequences
+            </div>
+
+            <pre>
+              <code>
+                &lt;string&gt; [&lt;expression&gt;:&lt;expression&gt;]
+                        s       start       stop
+
+                # Evaluates to a string that is a subsequence of the characters in 's',
+                # starting from position 'start' and ending in position 'stop - 1'
+
+                word = 'assume'
+                print word[3]
+                print word[3:4]
+                print word[4:6] # print from position 4 to 5
+                print word[4:]  # print from position 4 to the end
+                print word[:2]  # print from the beginning to position 1
+                print word[:]   # print from the beginning to the end
+              </code>
+            </pre>
+
+            <div class="concept-subtitle">
+              Finding Strings in Strings
+            </div>
+
+            <pre>
+              <code>
+                &lt;string&gt;.find(&lt;string&gt;)
+
+                # The output: number that gives the first position in the
+                # search string where the target string appears. If the target
+                # string is not found then -1 is returned.
+
+                pythagoras = 'There is geometry in the humming of the strings, there is music in the spacing of the spheres.'
+
+                print pythagoras.find('string')
+                print pythagoras[40:]
+                print pythagoras.find('T')
+                print pythagoras.find('sphere')
+                print pythagoras[86:]
+                print pythagoras.find('algebra')
+              </code>
+            </pre>
+
+            <pre>
+              <code>
+                &lt;string&gt;.find(&lt;string&gt;, &lt;number&gt;)
+
+                # The output: number that gives the first position in the
+                # search string where the target string appears, *after* the position
+                # passed in as the 2nd parameter (&lt;number&gt;).
+                # If the target string is not found then -1 is returned.
+
+                danton = "De l'audace, encore de l'audace, toujours de l'audace."
+
+                print danton.find('audace')
+                print danton.find('audace', 0)
+                print danton.find('audace', 5)
+                print danton.find('audace', 6)
+                print danton[6:]
+                print danton[25:]
+                print danton.find('audace', 25)
+                print danton.find('audace', 26)
+                print danton[47:]
+                print danton.find('audace', 48)
+              </code>
+            </pre>
+
+          </div> <!-- Concept Description div -->
+        </div> <!-- Concept div -->
+      </div> <!-- Lesson div -->
+
+      <div class="lesson">
+
+        <h2>Lesson 3: Input -> Function -> Output</h2>
+
+        <div class="concept">
+
+          <div class="concept-title">
+            Using Functions/Procedures
+          </div>
+
+          <div class="concept-description">
+
+            <div class="concept-subtitle">
+              A way to map inputs to outputs
+            </div>
+
+            <pre>
+              <code>
+                &lt;procedure&gt;(&lt;input&gt;, &lt;input&gt;,...)
+
+                          operands or arguments
+              </code>
+            </pre>
+
+            <pre>
+              <code>
+                def rest_of_string(s):
+                  return s[1:]
+
+                print rest_of_string('audacity')
+              </code>
+            </pre>
+
+            <div class="concept-subtitle">
+              On the first line of your function definition...
+            </div>
+
+              <ul>
+                <li>
+                  You must begin the line with <span class="bold">def</span> (lowercase)
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  After <span class="bold">def</span> you must give a function name (in this case it will be <span class="bold">udacify</span>)
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  Next, you must have a set of parentheses <span class="bold">with the required parameters inside</span>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  The line must end with a <span class="bold">:</span> (colon)
+                </li>
+              </ul>
+
+              <div class="concept-subtitle">
+                In the body of the function...
+              </div>
+
+              <ul>
+                <li>
+                  Every line in the function must be indented
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  If you want your function to produce output, it must end with a <span class="bold">return</span> statement
+                </li>
+              </ul>
+
+              <div class="concept-subtitle">
+                To "call" the function...
+              </div>
+
+              <ol>
+                <li>
+                  The function name, followed by...
+                </li>
+
+                <li>
+                  ...an open paren <span class="bold">(</span>, followed by...
+                </li>
+
+                <li>
+                  ...the values for the required parameters, followed by...
+                </li>
+
+                <li>
+                  ...a closed paren <span class="bold">)</span>
+                </li>
+              </ol>
+
+          </div> <!-- Concept Description div -->
+        </div> <!-- Concept div -->
+      </div> <!-- Lesson div -->
+
+      <div class="lesson">
+
+        <h2>Lesson 4: Decisions and Repetition: If and While</h2>
+
+        <div class="concept">
+
+          <div class="concept-title">
+            Equality Comparisons
+          </div>
+
+          <div class="concept-description">
+
+            <pre>
+              <code>
+                # Decisions and Repitition: Equality Comparisons
+
+                print 2 &lt; 3
+                print 21 &lt; 3
+                print 7 * 3 &lt; 21
+
+                print 7 * 3 != 21
+                print 7 * 3 == 21 # '=' means assignment, '==' mean equality
+              </code>
+            </pre>
+
+            <div class="concept-title">
+              If Statements
+            </div>
+
+            <pre>
+              <code>
+                if &lt;Test Expression&gt;:
+                  &lt;Block&gt; # block will execute 0 or 1 times
+                &lt;Code&gt;    # will execute regardless of the test expression
+              </code>
+            </pre>
+
+            <pre>
+              <code>
+                def absolute(x):
+                  if x &lt; 0:
+                    x = -x
+                  return x
+
+                print absolute(10)
+                print absolute(-10)
+              </code>
+            </pre>
+
+            <pre>
+              <code>
+                if &lt;Test Expression&gt;:
+                  &lt;Block&gt;
+                else:
+                  &lt;Block&gt;
+              </code>
+            </pre>
+
+            <div class="concept-title">
+              Or Operator
+            </div>
+
+            <pre>
+              <code>
+                &lt;Expression&gt; or &lt;Expression&gt;
+
+                If the first expression evaluates to True, the value is True
+                and the second expression is not evaluated.
+
+                If the first expression evaluates to False, the value is the
+                value of the second expression.
+              </code>
+            </pre>
+
+            <div class="concept-title">
+              Every Possible Computer Program
+            </div>
+
+            <p>We now know enough to write, in theory, every possible computer program. All that is needed:</p>
+
+            <ul>
+              <li>
+                Arithmetic
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                Comparisons
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                Procedures
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                If Statements
+              </li>
+            </ul>
+
+            <p>This was proven in the 1930s by Alan Turing (1912-1954):</p>
+
+            <ul>
+              <li>
+                Developed abstract model of a computer (1936), "Turing Machine"
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                Proved that a machine with a few simple operations could simulate any other machine
+              </li>
+            </ul>
+
+            <div class="concept-title">
+              While Loops
+            </div>
+
+            <pre>
+              <code>
+                while &lt;Test Expression&gt;
+                &lt;Block&gt; # Will execute 0, 1, 2,...times
+              </code>
+            </pre>
+
+            <pre>
+              <code>
+                while &lt;Test Expression&gt;
+                  &lt;Code&gt;
+                  if &lt;Break Test&gt;
+                    break
+                  &lt;More Code&gt;
+
+                &lt;After While&gt;
+              </code>
+            </pre>
+
+
+          </div> <!-- Concept Description div -->
+        </div> <!-- Concept div -->
+      </div> <!-- Lesson div -->
+
+    </div> <!-- Stage div -->
+
+    <!-- This document validates as CSS level 3 -->
+    <p>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+      <img style="border:0;width:88px;height:31px"
+      src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+      alt="Valid CSS!" />
+      </a>
+    </p>
+
+  </body>
+</html>
